@@ -18,7 +18,7 @@ import { AlertDiamondIcon, ImageIcon } from "@shopify/polaris-icons";
 
 export async function loader({ request }) {
   console.log("request", request, "request");
-  console.log('stg');
+  console.log('main');
   
   const { admin, session } = await authenticate.admin(request);
   const qrCodes = await getQRCodes(session.shop, admin.graphql);
